@@ -3,19 +3,21 @@
 
 int main()
 {
-    char name,Age,country,skill,City;
+    char name[120] ,country[30];
+	char skill,languages;
+	int age;
     printf("Welcome to Hacktoberfest 2020\n");
-    printf("Enter your name : ");//Get User name from scanf
-    scanf("%d",&name);
-    printf("Enter your Country of Residance : ");//Get user country from scanf
-    scanf("%s",&country);
-    Printf("Enter your Home city : ");
-    scanf("%s",&City);
-    printf("Enter your Age : ");//Get user Age from scanf
-    printf("%d",&age);
-    printf("Rate your programmings skills from A-D (A being the highest and D being the lowest : ");//Get user skill level from scanf
+    printf("Enter your Full name : ");//Get User name
+    gets(name);
+    printf("Enter your Country  : ");//Get user country
+    gets(country);
+    printf("Enter your Age : ");//Get user Age
+    scanf("%d",&age);
+    printf("Rate your programmings skills from A-D (A being the highest and D being the lowest) : ");//Get user skill level
     scanf(" %c",&skill);
-    scanf("Thank you %c Happy Hacking",country);//Thank the user from scanf
+    printf("what are your familiar programming languages   : ");//Get user Programming Languages
+    scanf(" %c",&languages);
+    printf("Thank you %s Happy Hacking 2020",name);//Thanking the user
 
     return 0;
 }
